@@ -23,11 +23,11 @@ System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\chromedriver.exe
 		WebElement JSprompt=driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
 		JSAlert.click();
 		driver.switchTo().alert().accept();//alert gets accepted
-		//String Alerttext=driver.switchTo().alert().getText();
+		String Alerttext=driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
 		driver.switchTo().alert().sendKeys("Hello");
 		
-		//.us/j/82747181839?pwd%3DRVdYWEhTWk9wZHhLd1NFOHZaeG9zQT09&sa=D&source=calendar&usd=2&usg=AOvVaw0XoFIYU2D9l6IT3099irK9
+		
 	}
 
 }
